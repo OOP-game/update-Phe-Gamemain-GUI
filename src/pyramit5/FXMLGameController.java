@@ -541,7 +541,6 @@ public class FXMLGameController implements Initializable {
 
     @FXML
     private Card chooseCard(MouseEvent event) {
-
         if (event.getSource() == pos00 && clickable[0][0]) {
             return (playCardPos[0][0]);
         } else if (event.getSource() == pos10 && clickable[1][0]) {
@@ -585,14 +584,93 @@ public class FXMLGameController implements Initializable {
         } else if (event.getSource() == pos55 && clickable[5][5]) {
             return (playCardPos[5][5]);
         } else if (event.getSource() == pos60 && clickable[6][0]) {
+            valueOfSelectedCard[selectedCounter] = playCardPos[6][0];
+            System.out.println(selectedCounter + " Card =" + valueOfSelectedCard[selectedCounter].getCardNumber());
+             if (selectedCounter == 1) {
+                result += valueOfSelectedCard[selectedCounter].getCardNumber();
+                if (result == 13) {
+                    selectedCounter = 0;
+                } else {
+                    selectedCounter = 0;
+                }
+            } else if (selectedCounter > 1) {
+                selectedCounter = 0;
+            } else {
+                selectedCounter++;
+
+            }
             return (playCardPos[6][0]);
         } else if (event.getSource() == pos61 && clickable[6][1]) {
+            valueOfSelectedCard[selectedCounter] = playCardPos[6][1];
+            System.out.println(selectedCounter + " Card =" + valueOfSelectedCard[selectedCounter].getCardNumber());
+            System.out.println("result " + result);
+            if (selectedCounter > 1) {
+                selectedCounter = 0;
+            } else if (selectedCounter == 1) {
+                result += valueOfSelectedCard[selectedCounter].getCardNumber();
+                if (result == 13) {
+                    selectedCounter = 0;
+                } else {
+                    selectedCounter = 0;
+                }
+            } else {
+                selectedCounter++;
+
+            }
             return (playCardPos[6][1]);
         } else if (event.getSource() == pos62 && clickable[6][2]) {
+            valueOfSelectedCard[selectedCounter] = playCardPos[6][2];
+            System.out.println(selectedCounter + " Card =" + valueOfSelectedCard[selectedCounter].getCardNumber());
+            System.out.println("result " + result);
+            if (selectedCounter > 1) {
+                selectedCounter = 0;
+            } else if (selectedCounter == 1) {
+                result += valueOfSelectedCard[selectedCounter].getCardNumber();
+                if (result == 13) {
+                    selectedCounter = 0;
+                } else {
+                    selectedCounter = 0;
+                }
+            } else {
+                selectedCounter++;
+
+            }
             return (playCardPos[6][2]);
         } else if (event.getSource() == pos63 && clickable[6][3]) {
+            valueOfSelectedCard[selectedCounter] = playCardPos[6][3];
+            System.out.println(selectedCounter + " Card =" + valueOfSelectedCard[selectedCounter].getCardNumber());
+            System.out.println("result " + result);
+            if (selectedCounter > 1) {
+                selectedCounter = 0;
+            } else if (selectedCounter == 1) {
+                result += valueOfSelectedCard[selectedCounter].getCardNumber();
+                if (result == 13) {
+                    selectedCounter = 0;
+                } else {
+                    selectedCounter = 0;
+                }
+            } else {
+                selectedCounter++;
+
+            }
             return (playCardPos[6][3]);
         } else if (event.getSource() == pos64 && clickable[6][4]) {
+            valueOfSelectedCard[selectedCounter] = playCardPos[6][4];
+            System.out.println(selectedCounter + " Card =" + valueOfSelectedCard[selectedCounter].getCardNumber());
+            System.out.println("result " + result);
+            if (selectedCounter > 1) {
+                selectedCounter = 0;
+            } else if (selectedCounter == 1) {
+                result += valueOfSelectedCard[selectedCounter].getCardNumber();
+                if (result == 13) {
+                    selectedCounter = 0;
+                } else {
+                    selectedCounter = 0;
+                }
+            } else {
+                selectedCounter++;
+
+            }
             return (playCardPos[6][4]);
         } else if (event.getSource() == pos65 && clickable[6][5]) {
             valueOfSelectedCard[selectedCounter] = playCardPos[6][5];
@@ -603,12 +681,14 @@ public class FXMLGameController implements Initializable {
             } else if (selectedCounter == 1) {
                 result += valueOfSelectedCard[selectedCounter].getCardNumber();
                 if (result == 13) {
-
+                    selectedCounter = 0;
                 } else {
                     selectedCounter = 0;
                 }
+            } else {
+                selectedCounter++;
+
             }
-            selectedCounter++;
             return (playCardPos[6][5]);
         } else if (event.getSource() == pos66 && clickable[6][6]) {
             valueOfSelectedCard[selectedCounter] = playCardPos[6][6];
@@ -619,12 +699,14 @@ public class FXMLGameController implements Initializable {
             } else if (selectedCounter == 1) {
                 result += valueOfSelectedCard[selectedCounter].getCardNumber();
                 if (result == 13) {
-                    
+                    selectedCounter = 0;
                 } else {
                     selectedCounter = 0;
                 }
+            } else {
+                selectedCounter++;
+
             }
-            selectedCounter++;
             return (playCardPos[6][6]);
         } else if (event.getSource() == flipedCardImage) {
             return deck.get(0);

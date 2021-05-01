@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" styleClass="bodybg" stylesheets="@backgroundGreen.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pyramit5.FXMLGameController">
+    <children>
+        <ImageView fx:id="pos00" fitHeight="129.0" fitWidth="99.0" layoutX="477.0" layoutY="25.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos10" fitHeight="129.0" fitWidth="99.0" layoutX="420.0" layoutY="68.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos11" fitHeight="129.0" fitWidth="99.0" layoutX="531.0" layoutY="68.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos20" fitHeight="129.0" fitWidth="99.0" layoutX="361.0" layoutY="120.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos21" fitHeight="129.0" fitWidth="99.0" layoutX="476.0" layoutY="120.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos22" fitHeight="129.0" fitWidth="99.0" layoutX="591.0" layoutY="120.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos30" fitHeight="129.0" fitWidth="99.0" layoutX="310.0" layoutY="169.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos31" fitHeight="129.0" fitWidth="99.0" layoutX="425.0" layoutY="169.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos32" fitHeight="129.0" fitWidth="99.0" layoutX="540.0" layoutY="169.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos33" fitHeight="129.0" fitWidth="99.0" layoutX="654.0" layoutY="169.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos40" fitHeight="129.0" fitWidth="99.0" layoutX="261.0" layoutY="223.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos41" fitHeight="129.0" fitWidth="99.0" layoutX="376.0" layoutY="223.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos42" fitHeight="129.0" fitWidth="99.0" layoutX="491.0" layoutY="223.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos43" fitHeight="129.0" fitWidth="99.0" layoutX="605.0" layoutY="223.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos44" fitHeight="129.0" fitWidth="99.0" layoutX="723.0" layoutY="223.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos50" fitHeight="129.0" fitWidth="99.0" layoutX="203.0" layoutY="274.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos51" fitHeight="129.0" fitWidth="99.0" layoutX="318.0" layoutY="274.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos52" fitHeight="129.0" fitWidth="99.0" layoutX="433.0" layoutY="274.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos53" fitHeight="129.0" fitWidth="99.0" layoutX="547.0" layoutY="274.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos54" fitHeight="129.0" fitWidth="99.0" layoutX="665.0" layoutY="274.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos55" fitHeight="129.0" fitWidth="99.0" layoutX="779.0" layoutY="274.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos60" fitHeight="129.0" fitWidth="99.0" layoutX="146.0" layoutY="329.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos61" fitHeight="129.0" fitWidth="99.0" layoutX="261.0" layoutY="329.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos62" fitHeight="129.0" fitWidth="99.0" layoutX="376.0" layoutY="329.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos63" fitHeight="129.0" fitWidth="99.0" layoutX="490.0" layoutY="329.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos64" fitHeight="129.0" fitWidth="99.0" layoutX="608.0" layoutY="329.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos65" fitHeight="129.0" fitWidth="99.0" layoutX="722.0" layoutY="329.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="pos66" fitHeight="129.0" fitWidth="99.0" layoutX="836.0" layoutY="329.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="setCardImage" fitHeight="129.0" fitWidth="99.0" layoutX="399.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../CardPicture/red_back.png" />
+         </image></ImageView>
+        <ImageView fx:id="flipedCardImage" fitHeight="129.0" fitWidth="99.0" layoutX="547.0" layoutY="520.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="drawButton" alignment="CENTER" layoutX="687.0" layoutY="558.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#drawCardButtonClicked" prefHeight="53.0" prefWidth="132.0" text="DRAW" textFill="RED">
+            <font>
+                <Font name="Verdana Pro Cond Semibold" size="23.0" />
+            </font>
+        </Button>
+        <Label layoutX="886.0" layoutY="99.0" prefHeight="42.0" prefWidth="115.0" text="SCORE : " textFill="WHITE">
+            <font>
+                <Font name="Rockwell Nova Light Italic" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="845.0" layoutY="47.0" prefHeight="42.0" prefWidth="115.0" text="TIME :" textFill="WHITE">
+            <font>
+                <Font name="Rockwell Nova Light Italic" size="26.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

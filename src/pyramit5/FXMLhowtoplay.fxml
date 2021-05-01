@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" styleClass="bodybg" stylesheets="@background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pyramit5.FXMLhowtoplayController">
+   <children>
+      <HBox fx:id="HowtoplayImage" layoutX="104.0" layoutY="56.0" prefHeight="607.0" prefWidth="871.0" />
+      <Button fx:id="Next" layoutX="898.0" layoutY="628.0" mnemonicParsing="false" onAction="#gonextfunction" prefHeight="70.0" prefWidth="117.0" text="Next">
+         <font>
+            <Font name="Barlow Condensed ExtraBold" size="24.0" />
+         </font></Button>
+      <Button fx:id="Back" layoutX="45.0" layoutY="628.0" mnemonicParsing="false" onAction="#gobackfunction" prefHeight="70.0" prefWidth="117.0" text="Back">
+         <font>
+            <Font name="Barlow Condensed ExtraBold" size="24.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

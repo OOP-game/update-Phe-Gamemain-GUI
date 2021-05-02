@@ -64,16 +64,17 @@ public class FXMLUserController implements Initializable {
 
         System.out.println("Clicked");
 
-//        try {
         stage = (Stage) Next.getScene().getWindow();
         Parent root1 = FXMLLoader.load(getClass().getResource("FXMLGame.fxml"));
         Scene scene1 = new Scene(root1, 1080, 720);
         stage.setResizable(false);
         stage.setScene(scene1);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
+        
+        FileWriter file = new FileWriter("Playername.txt");
+        BufferedWriter bw = new BufferedWriter(file);
+        name = Namefilled.getText();
+        bw.write(name);
+        bw.close();
     }
 
     private void toString(int counter) {

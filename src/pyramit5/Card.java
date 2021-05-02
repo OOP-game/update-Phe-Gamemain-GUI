@@ -19,14 +19,27 @@ public class Card {
     private String cardNumber;
     private String suit;
     private Image cardImage;
+    private ImageView imageView;
+    private int posY, posX;
     //private ImageView imageView;
-
-    public Card(String cardNumber, String suit) {
+    
+    public Card()
+    {
+        setCardNumber("0") ;
+        setSuit("G");
+    }
+    
+    public Card(String cardNumber, String suit , ImageView imageView) {
         setCardNumber(cardNumber);
         setSuit(suit);
         String fileName = cardNumber + suit + ".png";
         cardImage = new Image("./CardPicture/" + fileName);
         setCardImage(cardImage);
+        
+        imageView = new ImageView();
+        setImageView(imageView);
+        setPosY(posY);
+        setPosX(posX);
         //imageView = new ImageView();
     }
 
@@ -76,11 +89,27 @@ public class Card {
         this.cardImage = cardImage;
     }
 
-//    public ImageView getImageView() {
-//        return imageView;
-//    }
-//
-//    public void setImageView(ImageView imageView) {
-//        this.imageView = imageView;
-//    }
+   public ImageView getImageView() {
+       return imageView;
+    }
+
+    public void setImageView(ImageView imageView) {
+        this.imageView = imageView;
+    }
+
+    public int getPosY() {
+        return posY;
+    }
+
+    public void setPosY(int posY) {
+        this.posY = posY;
+    }
+
+    public int getPosX() {
+        return posX;
+    }
+
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
 }
